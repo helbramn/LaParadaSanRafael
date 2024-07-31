@@ -485,6 +485,161 @@ h3{
   .food-container {
     display: none;
   }
-
 }
 
+
+
+
+
+@media (max-width: 375px) {
+  body, html {
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden; /* Asegura que no haya scroll horizontal */
+    width: 100%;
+  }
+  .container{
+    max-width: 100%;
+    margin: 0 auto;
+    box-sizing: border-box;
+  }
+
+  .menu {
+    padding: 20px;
+    width: 100%;
+  }
+
+  .menu label {
+    display: initial;
+  }
+
+  .menu .navbar {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    right: 0;
+    background-color: #b3824c;
+    display: none;
+  }
+
+  .menu .navbar ul li a:hover {
+    color: #2C2C2C;
+  }
+
+  .menu .navbar ul li {
+    width: 100%;
+  }
+
+  #menu:checked ~ .navbar {
+    display: block;
+  }
+
+  .header {
+    min-height: auto;
+  }
+
+  .header-content {
+    padding: 100px 20px;
+  }
+
+  .logo {
+    position: relative;
+    z-index: 2;
+    width: 100%;
+    height: 20%;
+    margin-top: -20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .logo img {
+    width: 50%;
+    height: auto;
+  }
+
+  .informacion-content {
+    display: flex;
+    flex-direction: column;
+    margin-top: 0;
+  }
+
+  .our {
+    margin-top: 0;
+    padding: 150px 30px;
+  }
+
+  .informacion-2  {
+    padding-bottom: 35px;
+    background-color: #b3824c;
+  }
+
+  .ofert-content {
+    margin-top: 0;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .ofert-1 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #b3824c;
+    width: 100%;
+  }
+
+  .ofert-img {
+    order: 2;
+    width: 50%;
+    height: 220px;
+    margin-bottom: -6px;
+  }
+
+  .ofert-img img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+  }
+
+  .ofert-txt {
+    width: 100%;
+  }
+
+  .bg {
+    margin-top: 30px;
+  }
+
+  .food {
+    padding: 30px;
+  }
+
+  .food-content {
+    padding: 0;
+    flex-direction: column;
+  }
+
+  .food-1 {
+    margin: 0;
+  }
+
+  .footer{
+    padding: 30px;
+  }
+
+  .footer-content {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .link ul {
+    flex-direction: column;
+  }
+
+  .link ul li {
+    margin: 0 0 15px 0;
+  }
+
+  .food-container {
+    display: none;
+  }
+}
